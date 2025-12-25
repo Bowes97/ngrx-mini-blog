@@ -1,0 +1,29 @@
+<div class="home-container">
+  <div class="sidebar">
+    <app-product-filters></app-product-filters>
+  </div>
+
+  <div class="content">
+    @if (postStore.loading()) {
+      <div class="state-container">
+        <p-progress-spinner ariaLabel="loading" />
+      </div>
+    } @else if (postStore.error()) {
+      <div class="state-container">
+        {{ postStore.error() }}
+      </div>
+    } @else {
+      <div class="posts-card">
+        @for (post of postStore.pagedPosts(); track post) {
+          <app-post-card (click)="openPost(post)" (likedPost)="saveLikedPost($event)" [post]="post"></app-post-card>
+        }
+      </div>
+      <p-paginator
+        (onPageChange)="onPageChange($event)"
+        [first]="postStore.first()"
+        [rows]="postStore.rows()"
+        [totalRecords]="postStore.filteredPosts().length"
+        [rowsPerPageOptions]="[10, 20, 30]" />
+    }
+  </div>
+</div>

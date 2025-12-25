@@ -1,0 +1,40 @@
+<div class="post-filters-container" [formGroup]="filterForm">
+  <input pInputText type="text" formControlName="searchTerm" placeholder="Filters">
+
+  <p-accordion [multiple]="true">
+    <p-accordion-panel value="0">
+    <p-accordion-header>Filter tags:</p-accordion-header>
+      <p-accordion-content>
+        <div class="post-filters-container__tag-selector">
+          @for (tag of postStore.allTags(); track tag) {
+            <p-button [rounded]="true" [severity]="postStore.selectedTags().includes(tag) ? 'contrast' : 'secondary'" (click)="onTagSelected(tag)">
+                {{ tag }}
+            </p-button>
+          }
+        </div>
+      </p-accordion-content>
+    </p-accordion-panel>
+
+    <p-accordion-panel value="1">
+    <p-accordion-header>Filter date:</p-accordion-header>
+      <p-accordion-content>
+        <div class="post-filters-container__datepicker-selector">
+          <p-datepicker formControlName="dateFrom" placeholder="From" />
+          <p-datepicker formControlName="dateTo" placeholder="To" />
+        </div>
+      </p-accordion-content>
+    </p-accordion-panel>
+
+    <p-accordion-panel value="2">
+    <p-accordion-header>Filter views:</p-accordion-header>
+      <p-accordion-content>
+        <p-inputnumber inputId="integeronly" formControlName="viewers" />
+      </p-accordion-content>
+    </p-accordion-panel>
+  </p-accordion>
+
+  <div>
+    <p-button (click)="clearFilters()" label="Clear all filters" />
+  </div>
+</div>
+

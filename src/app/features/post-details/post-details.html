@@ -1,0 +1,36 @@
+@if (postStore.getPostById(postId); as post) {
+  <p-card class="post-details">
+    <ng-template #header>
+      <div class="post-details__header">
+        <div class="post-details__header-title">
+          <span>{{ post.title }}</span>
+          @if (post.featured) {
+            <p-badge value="Featured" severity="contrast" [style]="{'margin-left': '4px'}"></p-badge>
+          }
+        </div>
+        <div (click)="goBack()">
+          <p-badge value="Back" severity="secondary" [style]="{'margin-left': '4px'}"></p-badge>
+        </div>
+      </div>
+      <div class="card-subheader">{{ post.category }}</div>
+    </ng-template>
+
+    <dl class="post-details__detail-list">
+      <dt>Authors:</dt>
+      <dd>{{ post.authors.join(', ') }}</dd>
+
+      <dt>Date:</dt>
+      <dd>{{ post.date | date:'mediumDate' }}</dd>
+
+      <dt>Views:</dt>
+      <dd>{{ post.views | number }}</dd>
+
+      <dt>Tags:</dt>
+      <dd>
+        @for (tag of post.tags; track tag) {
+          <p-tag [value]="tag" [style]="{'margin-right': '4px'}"></p-tag>
+        }
+      </dd>
+    </dl>
+  </p-card>
+}

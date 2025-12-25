@@ -1,0 +1,26 @@
+.post-details {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  width: 50%;
+  margin: auto;
+  padding: 16px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__header-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+
+  &__detail-list {
+    dt {
+      font-weight: 600;
+      margin-top: 0.5rem;
+    }
+    dd {
+      margin: 0 0 0.5rem 1rem;
+    }
+  }
+}

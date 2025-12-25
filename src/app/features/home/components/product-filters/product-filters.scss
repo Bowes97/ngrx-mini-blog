@@ -1,0 +1,13 @@
+.post-filters-container {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+  &__tag-selector, &__datepicker-selector {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}
+

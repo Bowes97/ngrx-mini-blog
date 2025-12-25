@@ -1,0 +1,53 @@
+.home-container {
+  display: flex;
+  gap: 12px;
+  height: calc(100% - 50px);
+
+  .sidebar {
+    width: 20%;
+
+    @media (max-width: 1024px) {
+      width: 30%;
+    }
+
+     @media (max-width: 560px) {
+      width: 40%;
+    }
+  }
+
+  .content {
+    width: 80%;
+    margin: 0 16px;
+
+   @media (max-width: 1024px) {
+      width: 70%;
+   }
+
+  @media (max-width: 560px) {
+      width: 60%;
+   }
+
+    .state-container {
+      height: calc(100dvh - 50px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .posts-card {
+      column-count: 4;
+
+      @media (max-width: 1024px) {
+        column-count: 3;
+      }
+
+      @media (max-width: 768px) {
+        column-count: 2;
+      }
+
+      @media (max-width: 560px) {
+        column-count: 1;
+      }
+    }
+  }
+}

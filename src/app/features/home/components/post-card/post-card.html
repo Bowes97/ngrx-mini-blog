@@ -1,0 +1,15 @@
+<p-card [@fadeInOut] [header]="post.title" class="post-card animate-duration-300">
+    <p class="post-card__category">{{ post.category }} - {{ post.date }}</p>
+    <p class="post-card__authors">By: {{ post.authors.join(', ') }}</p>
+    <p class="post-card__tags">Tags: {{ post.tags.join(', ') }}</p>
+    <p class="post-card__views">Views: {{ post.views }}</p>
+
+  <div class="post-card__actions">
+    <p-button
+      class="post-card__liked-button"
+      [icon]="post.liked ? 'pi pi-check' : 'pi pi-times'"
+      size="small"
+      (click)="toggleLike($event)"
+      [label]="post.liked ? 'Liked' : 'Like'"></p-button>
+  </div>
+</p-card>

@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "title": "Mastering NgRx in Angular",
+    "category": "Angular",
+    "authors": ["Grisha T.", "Anna K."],
+    "date": "2025-01-05",
+    "tags": ["ngrx", "angular"],
+    "views": 1245,
+    "featured": true
+  },
+  {
+    "id": 2,
+    "title": "Advanced RxJS Patterns",
+    "category": "JavaScript",
+    "authors": ["Olena S."],
+    "date": "2025-01-18",
+    "tags": ["rxjs", "async", "state"],
+    "views": 980,
+    "featured": false
+  },
+  {
+    "id": 3,
+    "title": "Signal Store Deep Dive",
+    "category": "Angular",
+    "authors": ["Grisha T."],
+    "date": "2025-02-02",
+    "tags": ["angular", "signals", "state"],
+    "views": 540,
+    "featured": true
+  },
+  {
+    "id": 4,
+    "title": "TypeScript Generics Explained",
+    "category": "TypeScript",
+    "authors": ["Mark P.", "Iryna L."],
+    "date": "2025-02-15",
+    "tags": ["typescript"],
+    "views": 870,
+    "featured": false
+  },
+  {
+    "id": 5,
+    "title": "Optimizing Angular Performance",
+    "category": "Angular",
+    "authors": ["Dmytro V."],
+    "date": "2025-03-01",
+    "tags": ["angular", "performance", "ngrx"],
+    "views": 965,
+    "featured": true
+  },
+  {
+    "id": 6,
+    "title": "REST vs GraphQL",
+    "category": "Backend",
+    "authors": ["Olena S.", "Ivan K."],
+    "date": "2025-03-18",
+    "tags": ["api", "state"],
+    "views": 780,
+    "featured": false
+  },
+  {
+    "id": 7,
+    "title": "Java Basics for Beginners",
+    "category": "Java",
+    "authors": ["Serhii B."],
+    "date": "2025-04-02",
+    "tags": ["java"],
+    "views": 420,
+    "featured": false
+  },
+  {
+    "id": 8,
+    "title": "CSS Grid vs Flexbox",
+    "category": "Frontend",
+    "authors": ["Anna K."],
+    "date": "2025-04-15",
+    "tags": ["css"],
+    "views": 1550,
+    "featured": true
+  },
+  {
+    "id": 9,
+    "title": "Unit Testing in Angular",
+    "category": "Angular",
+    "authors": ["Grisha T.", "Mark P."],
+    "date": "2025-04-28",
+    "tags": ["angular", "testing"],
+    "views": 1120,
+    "featured": false
+  },
+  {
+    "id": 10,
+    "title": "AI in Web Development",
+    "category": "AI",
+    "authors": ["Olena S."],
+    "date": "2025-05-05",
+    "tags": ["ai"],
+    "views": 1980,
+    "featured": true
+  },
+  {
+    "id": 11,
+    "title": "Deep Dive into Node.js",
+    "category": "Backend",
+    "authors": ["Ivan K."],
+    "date": "2025-05-18",
+    "tags": ["nodejs", "api"],
+    "views": 970,
+    "featured": true
+  },
+  {
+    "id": 12,
+    "title": "Microservices Architecture Explained",
+    "category": "Backend",
+    "authors": ["Olena S.", "Serhii B."],
+    "date": "2025-06-01",
+    "tags": ["api", "state", "backend"],
+    "views": 1420,
+    "featured": true
+  },
+  {
+    "id": 13,
+    "title": "Effective Git Workflows",
+    "category": "Tools",
+    "authors": ["Mark P."],
+    "date": "2025-06-12",
+    "tags": ["tools"],
+    "views": 680,
+    "featured": false
+  },
+  {
+    "id": 14,
+    "title": "Building Real-Time Apps with WebSockets",
+    "category": "JavaScript",
+    "authors": ["Anna K.", "Olena S."],
+    "date": "2025-06-20",
+    "tags": ["javascript", "async", "state"],
+    "views": 940,
+    "featured": true
+  },
+  {
+    "id": 15,
+    "title": "Exploring AI-Powered Chatbots",
+    "category": "AI",
+    "authors": ["Dmytro V.", "Olena S."],
+    "date": "2025-07-01",
+    "tags": ["ai", "backend"],
+    "views": 1760,
+    "featured": true
+  },
+  {
+    "id": 16,
+    "title": "CSS Animations: Beginner to Pro",
+    "category": "Frontend",
+    "authors": ["Anna K."],
+    "date": "2025-07-10",
+    "tags": ["css", "frontend"],
+    "views": 1250,
+    "featured": false
+  },
+  {
+    "id": 17,
+    "title": "TypeScript Best Practices",
+    "category": "TypeScript",
+    "authors": ["Mark P."],
+    "date": "2025-07-18",
+    "tags": ["typescript", "best practices"],
+    "views": 870,
+    "featured": true
+  },
+  {
+    "id": 18,
+    "title": "State Management with Zustand",
+    "category": "JavaScript",
+    "authors": ["Grisha T."],
+    "date": "2025-07-25",
+    "tags": ["javascript", "state"],
+    "views": 520,
+    "featured": false
+  },
+  {
+    "id": 19,
+    "title": "Serverless Architecture with AWS Lambda",
+    "category": "Backend",
+    "authors": ["Olena S.", "Ivan K."],
+    "date": "2025-08-05",
+    "tags": ["backend", "api"],
+    "views": 1370,
+    "featured": true
+  },
+  {
+    "id": 20,
+    "title": "Introduction to Web3 Development",
+    "category": "Blockchain",
+    "authors": ["Dmytro V.", "Anna K."],
+    "date": "2025-08-12",
+    "tags": ["blockchain"],
+    "views": 1600,
+    "featured": true
+  }
+]
